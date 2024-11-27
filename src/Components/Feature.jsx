@@ -48,7 +48,7 @@ const Feature = () => {
       <div
         className={`w-full lg:w-1/2 transform ${
           showAnimation ? 'animate-slide-right' : ''
-        } opacity-0 animate-element  mb-10`} // removed margin-top to eliminate space
+        } opacity-0 animate-element py-20 mb-10`} // removed margin-top to eliminate space
       >
         <h2 className="text-3xl lg:text-4xl font-bold text-red-600 mb-4">
           Your Perfect Mobiles Awaits at FoneShack

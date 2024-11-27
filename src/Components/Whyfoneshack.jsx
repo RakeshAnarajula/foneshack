@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 const WhyChooseFoneShack = () => {
   const [showAnimation, setShowAnimation] = useState([]);
-
   useEffect(() => {
     const options = {
       root: null,
       threshold: 0.5,
     };
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const index = parseInt(entry.target.getAttribute('data-index'));
@@ -60,7 +58,7 @@ const WhyChooseFoneShack = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
       {/* Title with fade-in animation */}
       <h1 
         className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-red-600 py-8 opacity-0 animate-fade-in"
@@ -112,8 +110,7 @@ const WhyChooseFoneShack = () => {
           </div>
         ))}
       </main>
-
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }
@@ -126,5 +123,4 @@ const WhyChooseFoneShack = () => {
     </div>
   );
 };
-
 export default WhyChooseFoneShack;

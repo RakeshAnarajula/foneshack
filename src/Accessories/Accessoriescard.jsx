@@ -128,7 +128,7 @@ const Accessories = () => {
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
                 transition={{
-                  duration: 5, // Sync with the image change interval
+                  duration: 3, // Sync with the image change interval
                   ease: "linear",
                   repeat: Infinity,
                   repeatType: "loop",
