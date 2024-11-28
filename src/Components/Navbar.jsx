@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ArrowUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
 const navItems = [
   { name: 'MOBILE PHONE', path: '/mobilephones' },
   { name: 'ACCESSORIES', path: '/accessories' },
@@ -149,7 +150,7 @@ const Navbar = () => {
         {showArrow && (
           <motion.button
             onClick={handleArrowClick}
-            className="fixed bottom-4 right-4 p-3 bg-white text-red-500 rounded-full shadow-lg z-50 hover:bg-red-50 transition-colors duration-300"
+            className="fixed bottom-4 right-4 p-3 bg-white text-red-500 rounded-full shadow-lg z-50 hover:bg-red-50 transition-colors duration-300 hidden lg:block"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5 }}

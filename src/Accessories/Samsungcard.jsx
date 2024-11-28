@@ -70,7 +70,7 @@ const SamsungTable = () => {
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         />
       </motion.div>
-      <div className="bg-gray-100 rounded-lg shadow">
+      <div className="bg-gray-100 rounded-lg shadow-lg ">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-800 text-white">
             <tr>
@@ -97,13 +97,13 @@ const SamsungTable = () => {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 className="hover:bg-gray-50 transition-colors relative cursor-pointer"
               >
-                <td className="px-4 py-2 sm:px-6 sm:py-4 whitespace-nowrap text-xs sm:text-sm font-medium text-gray-900">
+                <td className="px-1 py-2 sm:px-6 sm:py-4 whitespace-nowrap text-xs sm:text-sm font-medium text-gray-900">
                   {product.sku}
                 </td>
-                <td className="px-4 py-2 sm:px-6 sm:py-4 text-xs sm:text-sm text-gray-500">
+                <td className="px-1 py-2 sm:px-6 sm:py-4 text-xs sm:text-sm text-gray-500">
                   {product.description}
                 </td>
-                <td className="px-4 py-2 sm:px-6 sm:py-4 whitespace-nowrap text-xs sm:text-sm text-gray-500">
+                <td className="px-1 py-2 sm:px-6 sm:py-4 whitespace-nowrap text-xs sm:text-sm text-gray-500">
                   {product.altSku}
                 </td>
                 {hoveredRowIndex === index && (

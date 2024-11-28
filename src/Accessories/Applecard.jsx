@@ -80,7 +80,7 @@ const AppleProductsTable = () => {
         </motion.h1>
       </motion.div>
 
-      <div className="bg-gray-100 rounded-lg shadow">
+      <div className="bg-gray-100 rounded-lg shadow-lg">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-800 text-white">
             <tr>

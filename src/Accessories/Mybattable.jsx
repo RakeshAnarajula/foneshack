@@ -52,7 +52,7 @@ const App = () => {
     setSelectedTitle(data[0]);
   }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-gradient-to-t from-gray-700 to-gray-900 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ const App = () => {
                 <li
                   key={index}
                   onClick={() => handleTitleClick(index)}
-                  className={`cursor-pointer p-3 text-gray-700 hover:bg-gray-300 rounded-md transition-all duration-300 ease-in-out font-medium ${
+                  className={`cursor-pointer p-3  hover:bg-gray-300 rounded-md transition-all duration-300 ease-in-out font-medium ${
                     selectedTitle?.title === item.title ? "bg-gray-400 font-bold" : ""
                   }`}
                 >
@@ -96,11 +96,11 @@ const App = () => {
                 transition={{ duration: 0.5 }}
                 className="w-full text-center"
               >
-                <h2 className="text-xl lg:text-2xl font-bold mb-4 text-gray-800">
+                <h2 className="text-xl lg:text-2xl font-bold mb-4">
                   {selectedTitle.title}
                 </h2>
                 <div className="mb-4">
-                  <p className="font-semibold text-gray-600">SKU: {selectedTitle.sku}</p>
+                  <p className="font-semibold text-gray-700">SKU: {selectedTitle.sku}</p>
                   <p className="text-lg lg:text-xl text-gray-700">{selectedTitle.description}</p>
 
                   {selectedTitle.additionalItems && (
@@ -110,9 +110,9 @@ const App = () => {
                       </h3>
                       <table className="w-full border-collapse">
                         <thead>
-                          <tr className="bg-gray-100">
-                            <th className="border border-gray-300 p-2 text-gray-700">SKU</th>
-                            <th className="border border-gray-300 p-2 text-gray-700">Description</th>
+                          <tr className="bg-gray-200">
+                            <th className="border border-gray-300 p-2 ">SKU</th>
+                            <th className="border border-gray-300 p-2 ">Description</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -121,10 +121,10 @@ const App = () => {
                               key={index}
                               className="hover:bg-gray-200 transition-colors duration-200"
                             >
-                              <td className="border border-gray-300 p-2 text-gray-700">
+                              <td className="border border-gray-300 p-2 text-gray-800">
                                 {item.sku}
                               </td>
-                              <td className="border border-gray-300 p-2 text-gray-700">
+                              <td className="border border-gray-300 p-2 text-gray-800">
                                 {item.description}
                               </td>
                             </tr>
