@@ -4,26 +4,19 @@ import { motion } from 'framer-motion';
 const Hero1 = ({ scrollToMobilePhone }) => {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
-      {/* Mobile Background Image */}
       <div
         className="absolute inset-0 block lg:hidden bg-cover bg-center"
         style={{ backgroundImage: 'url("/main hero2.png")' }}
       ></div>
-
-      {/* Laptop/Desktop Background Image */}
       <div
         className="absolute inset-0 hidden lg:block bg-center"
         style={{
-          backgroundImage: 'url("Samsung Galaxy1.png")',
-          backgroundSize: 'contain', // Contain image for laptops
+          backgroundImage: 'url("Samsung Galaxy2.png")',
+          backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
         }}
       ></div>
-
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      {/* Content */}
       <div className="relative z-10 text-center text-white p-6 md:p-12">
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500 animate-fade-in"
@@ -54,8 +47,6 @@ const Hero1 = ({ scrollToMobilePhone }) => {
           Explore Now
         </motion.button>
       </div>
-
-      {/* Custom Fade-in Animation */}
       <style>
         {`
           .animate-fade-in {
