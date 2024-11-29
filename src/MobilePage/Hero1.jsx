@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 const Hero1 = ({ scrollToMobilePhone }) => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
       {/* Mobile Background Image */}
       <div
         className="absolute inset-0 block lg:hidden bg-cover bg-center"
@@ -14,14 +14,14 @@ const Hero1 = ({ scrollToMobilePhone }) => {
       <div
         className="absolute inset-0 hidden lg:block bg-center"
         style={{
-          backgroundImage: 'url("/main hero1.png")',
+          backgroundImage: 'url("Samsung Galaxy1.png")',
           backgroundSize: 'contain', // Contain image for laptops
           backgroundRepeat: 'no-repeat',
         }}
       ></div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white p-6 md:p-12">

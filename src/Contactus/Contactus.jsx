@@ -65,15 +65,15 @@ const ContactPage = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <Mail className="w-7 h-7 text-cyan-400" />
-                  <span className="text-gray-300 font-semibold">foneshack@123gmail.com</span>
+                  <span className="text-gray-300 font-semibold">roseau@thefoneshack.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="w-7 h-7 text-cyan-400" />
-                  <span className="text-gray-300 font-semibold">+1 (555) 123-4567</span>
+                  <span className="text-gray-300 font-semibold">767 440 3565</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-7 h-7 text-cyan-400" />
-                  <span className="text-gray-300 font-semibold">123 Tech Lane, Innovation City</span>
+                  <span className="text-gray-300 font-semibold">Roseau Office</span>
                 </div>
               </div>
             </div>
@@ -173,7 +173,16 @@ const ContactPage = () => {
                   Thank you for reaching out. We'll get back to you soon.
                 </p>
                 <button
-                  onClick={() => setIsSubmitted(false)}
+                  onClick={() => {
+                    setIsSubmitted(false); // Reset submission status
+                    setFormData({
+                      name: '',
+                      email: '',
+                      phone: '',
+                      message: ''
+                    }); // Reset form data
+                    setErrors({}); // Reset errors
+                  }}
                   className="mx-auto block px-6 py-3 bg-cyan-500 text-white rounded-full hover:bg-cyan-600 transition"
                 >
                   Send Another Message

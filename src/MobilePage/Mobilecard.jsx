@@ -1,44 +1,87 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronUp, ChevronDown } from 'lucide-react';
+
 const MobilePhone = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials = [
     {
-      image: "/iphone 14 pro.png",
-      title: "iPhone 14 Pro",
+      image: "/1Blue G93.png",
+      title: "BLU G93",
       content:
-        "Experience the revolutionary A16 Bionic chip and dynamic island feature. Professional camera system with 48MP main sensor delivers stunning photos in any light condition.",
-      specialty: "Photography & Performance",
+        "An affordable smartphone with a 6.5-inch display, 4GB RAM, and a 13MP dual-camera setup, offering great value for everyday use.",
+      specialty: "Expandable storage & Dual-camera",
     },
     {
-      image: "/samsung galaxy S23 ultra.jpg",
-      title: "Samsung Galaxy S23 Ultra",
+      image: "/1BluG43.png",
+      title: "BLU G43",
       content:
-        "Featuring an advanced S Pen and professional-grade camera system with 200MP sensor. Perfect for both creative professionals and power users.",
-      specialty: "Productivity & Versatility",
+        "The BLU G43 features a 6.0-inch display, 2GB RAM, and a 13MP main camera, making it a great choice for budget-conscious users.",
+      specialty: "Compact design & Good performance at a budget",
     },
     {
-      image: "/google pixel 7 pro.jpg",
-      title: "Google Pixel 7 Pro",
+      image: "/1BluG73.png",
+      title: "BLU G73",
       content:
-        "Superior AI-powered photography and pure Android experience. Advanced computational photography features make every shot perfect.",
-      specialty: "AI & Software Innovation",
+        "With a 6.5-inch screen, 4GB RAM, and a 48MP triple-camera setup, the BLU G73 offers excellent performance and photography features.",
+      specialty: "Triple-camera setup & Large display",
     },
     {
-      image: "/mobilephone hero.jpg",
-      title: "OnePlus 11",
+      image: "/1Galaxy A15.png",
+      title: "Galaxy A15",
       content:
-        "Lightning-fast performance with Snapdragon 8 Gen 2. Hasselblad camera partnership delivers natural colors and exceptional clarity.",
-      specialty: "Speed & Efficiency",
+        "The Samsung Galaxy A15 offers a 6.5-inch screen with HD+ resolution, 4GB RAM, and a 48MP quad-camera system, delivering solid value for the price.",
+      specialty: "High-quality camera & Long-lasting battery",
     },
     {
-      image: "/Xiaomi 13 pro.jpg",
-      title: "Xiaomi 13 Pro",
+      image: "/1Nokia 110 4G.png",
+      title: "Nokia 110 4G",
       content:
-        "Leica-powered camera system with 1-inch sensor. Premium build quality with ceramic back and impressive fast charging capabilities.",
-      specialty: "Camera & Charging",
+        "A durable 4G feature phone with a 1.8-inch display, long battery life, and essential features like a torch and FM radio.",
+      specialty: "Affordable 4G connectivity & Battery life",
+    },
+    {
+      image: "/1Nokia-215-5G-1.png",
+      title: "Nokia 215 5G",
+      content:
+        "A reliable entry-level 5G phone with a 2.4-inch display, 1GB RAM, and essential features for those looking to enter the 5G world at an affordable price.",
+      specialty: "5G Connectivity & Compact design",
+    },
+    {
+      image: "/1Redmi 10.png",
+      title: "Redmi 10",
+      content:
+        "The Redmi 10 features a 6.5-inch display, 4GB RAM, and a 50MP quad-camera setup, delivering great performance and camera quality at an affordable price.",
+      specialty: "Quad-camera setup & High-refresh display",
+    },
+    {
+      image: "/1RedminNote-12.png",
+      title: "Redmi Note 12",
+      content:
+        "A powerful smartphone with a 6.67-inch AMOLED display, 6GB RAM, and a 50MP triple-camera setup, providing a great value for its price point.",
+      specialty: "AMOLED display & Strong performance",
+    },
+    {
+      image: "/1Samsung-Galaxy-s22-Ultra-2.png",
+      title: "Samsung Galaxy S22",
+      content:
+        "The Samsung Galaxy S22 offers a 6.1-inch Dynamic AMOLED 2X display, 8GB RAM, and a 108MP main camera, providing flagship performance in a compact design.",
+      specialty: "Flagship performance & Stunning display",
+    },
+    {
+      image: "/1Xiaomi-Poco-X5-1.png",
+      title: "Xiaomi Poco X5",
+      content:
+        "With a 6.67-inch AMOLED display, 6GB RAM, and a 48MP camera, the Poco X5 is designed to offer high-end features at an affordable price.",
+      specialty: "AMOLED display & 5G support",
+    },
+    {
+      image: "/1Xiaomi-Poco-X5-Pro.png",
+      title: "Xiaomi Poco X5 Pro",
+      content:
+        "The Poco X5 Pro brings a 6.67-inch AMOLED display, 8GB RAM, and a 108MP camera, delivering flagship-level features at a competitive price.",
+      specialty: "Pro-level performance & 108MP camera",
     },
   ];
 

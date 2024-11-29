@@ -5,7 +5,7 @@ const Accessories = () => {
   const testimonials = [
     {
       image: "/longearbuds.jpg",
-      title: "Spectrum Elite - Gaming Headphones",
+      title: "Samsung Fitpro AKG-Y500",
       content:
       "Immerse yourself in dynamic sound with vibrant RGB lighting that pulses to your music's beat. Premium over-ear comfort meets gaming-grade audio performance for an unmatched listening experience.",
       specialty: "RGB Lighting & Bass Enhancement",

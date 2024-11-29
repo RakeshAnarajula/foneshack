@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ArrowUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 const navItems = [
   { name: 'MOBILE PHONE', path: '/mobilephones' },
   { name: 'ACCESSORIES', path: '/accessories' },
@@ -20,7 +19,7 @@ const Navbar = () => {
   const [showArrow, setShowArrow] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const menuRef = useRef(null); // Reference for the menu
+  const menuRef = useRef(null);
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -39,7 +38,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [showArrow]);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -70,7 +68,7 @@ const Navbar = () => {
   };
 
   const handleArrowClick = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -121,7 +119,7 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.1 }}
             >
               <div 
                 className="px-2 pt-2 pb-3 space-y-1 sm:px-3" 
@@ -163,4 +161,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;
