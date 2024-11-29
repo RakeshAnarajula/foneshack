@@ -24,28 +24,20 @@ const App = () => {
   const mobilePhoneRef = useRef(null);
   const accessoriesRef = useRef(null);
   useEffect(() => {
-    // Simulate loading animation for 2.5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1500);
-
     return () => clearTimeout(timer);
   }, []);
-
-  // Scroll functions for smooth navigation
   const scrollToFeature = () => {
     featureSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToMobilePhone = () => {
     mobilePhoneRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToAccessories = () => {
     accessoriesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  // Home Page Component
   const Home = () => (
     <div>
       <Hero scrollToFeature={scrollToFeature} />
@@ -58,8 +50,6 @@ const App = () => {
       </div>
     </div>
   );
-
-  // Mobile Phones Page Component
   const MobilePhone = () => (
     <div>
       <Hero1 scrollToMobilePhone={scrollToMobilePhone} />
@@ -70,8 +60,6 @@ const App = () => {
       </div>
     </div>
   );
-
-  // Accessories Page Component
   const Accessories = () => (
     <div>
       <Hero2 scrollToAccessories={scrollToAccessories} />
@@ -84,16 +72,12 @@ const App = () => {
       </div>
     </div>
   );
-
-  // Contact Page Component
   const Contact = () => (
     <div>
       <Contactus />
       <Footer1 />
     </div>
   );
-
-  // Display loading animation first, then the main content
   if (isLoading) {
     return <WebsiteLoader />;
   }
@@ -112,5 +96,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;

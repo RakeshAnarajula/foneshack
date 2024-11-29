@@ -125,7 +125,7 @@ const Navbar = () => {
             >
               <div 
                 className="px-2 pt-2 pb-3 space-y-1 sm:px-3" 
-                ref={menuRef} // Attach the ref to the menu
+                ref={menuRef}
               >
                 {navItems.map((item) => (
                   <button
@@ -145,7 +145,6 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </motion.nav>
-
       <AnimatePresence>
         {showArrow && (
           <motion.button
@@ -164,5 +163,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;
