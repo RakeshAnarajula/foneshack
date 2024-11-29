@@ -4,7 +4,7 @@ const WebsiteLoader = () => {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1000);
     return () => clearTimeout(loadingTimer);
   }, );
   return (

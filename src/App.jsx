@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Feature from "./Components/Feature";
-import WebsiteLoader from "./Components/websiteloader";
+import Loader from "./Components/Loader";
 import Ourservices from "./Components/Ourservices";
 import Whyfoneshack from "./Components/Whyfoneshack";
 import Marquee from "./Components/Marquee";
@@ -26,7 +26,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
   const scrollToFeature = () => {
@@ -79,7 +79,7 @@ const App = () => {
     </div>
   );
   if (isLoading) {
-    return <WebsiteLoader />;
+    return <Loader />;
   }
 
   return (
