@@ -3,15 +3,27 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 const Hero1 = ({ scrollToMobilePhone }) => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Mobile Background Image */}
       <div
-        className="absolute inset-0 block lg:hidden bg-cover bg-center opacity-50"
+        className="absolute inset-0 block lg:hidden bg-cover bg-center"
         style={{ backgroundImage: 'url("/main hero2.png")' }}
       ></div>
+
+      {/* Laptop/Desktop Background Image */}
       <div
-        className="absolute inset-0 hidden lg:block bg-contain bg-center opacity-20"
-        style={{ backgroundImage: 'url("/mobilephone hero.jpg")' }}
+        className="absolute inset-0 hidden lg:block bg-center"
+        style={{
+          backgroundImage: 'url("/main hero1.png")',
+          backgroundSize: 'contain', // Contain image for laptops
+          backgroundRepeat: 'no-repeat',
+        }}
       ></div>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      {/* Content */}
       <div className="relative z-10 text-center text-white p-6 md:p-12">
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500 animate-fade-in"
@@ -22,12 +34,14 @@ const Hero1 = ({ scrollToMobilePhone }) => {
           Mobile Phones
         </motion.h1>
         <motion.p
-          className="mt-4 max-w-md mx-auto text-lg sm:text-xl md:text-2xl text-white opacity-80"
+          className="mt-4 max-w-4xl mx-auto text-lg sm:text-xl md:text-2xl text-white opacity-80"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Discover the latest in mobile technology with top-brand handsets, innovative designs, and unbeatable features. Stay connected with style and ease.
+          Discover the latest in mobile technology with top-brand handsets,
+          innovative designs, and unbeatable features. Stay connected with style
+          and ease.
         </motion.p>
         <motion.button
           className="mt-8 px-6 py-3 rounded-lg text-white font-semibold bg-purple-500 shadow-lg transition-colors duration-300"
@@ -41,6 +55,7 @@ const Hero1 = ({ scrollToMobilePhone }) => {
         </motion.button>
       </div>
 
+      {/* Custom Fade-in Animation */}
       <style>
         {`
           .animate-fade-in {
@@ -55,7 +70,9 @@ const Hero1 = ({ scrollToMobilePhone }) => {
     </div>
   );
 };
+
 Hero1.propTypes = {
   scrollToMobilePhone: PropTypes.func.isRequired,
 };
+
 export default Hero1;
