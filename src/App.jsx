@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Feature from "./Components/Feature";
+import WebsiteLoader from "./Components/websiteloader";
 import Ourservices from "./Components/Ourservices";
 import Whyfoneshack from "./Components/Whyfoneshack";
 import Marquee from "./Components/Marquee";
@@ -16,14 +17,22 @@ import Accessoriescard from "./Accessories/Accessoriescard";
 import Applecard from "./Accessories/Applecard";
 import Samsungcard from "./Accessories/Samsungcard";
 import Mybattable from "./Accessories/Mybattable";
-import Contactus from './Contactus/Contactus';
-
+import Contactus from "./Contactus/Contactus";
 const App = () => {
-  
+  const [isLoading, setIsLoading] = useState(true);
   const featureSectionRef = useRef(null);
   const mobilePhoneRef = useRef(null);
   const accessoriesRef = useRef(null);
+  useEffect(() => {
+    // Simulate loading animation for 2.5 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
 
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Scroll functions for smooth navigation
   const scrollToFeature = () => {
     featureSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -36,6 +45,7 @@ const App = () => {
     accessoriesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Home Page Component
   const Home = () => (
     <div>
       <Hero scrollToFeature={scrollToFeature} />
@@ -49,6 +59,7 @@ const App = () => {
     </div>
   );
 
+  // Mobile Phones Page Component
   const MobilePhone = () => (
     <div>
       <Hero1 scrollToMobilePhone={scrollToMobilePhone} />
@@ -60,6 +71,7 @@ const App = () => {
     </div>
   );
 
+  // Accessories Page Component
   const Accessories = () => (
     <div>
       <Hero2 scrollToAccessories={scrollToAccessories} />
@@ -73,12 +85,18 @@ const App = () => {
     </div>
   );
 
+  // Contact Page Component
   const Contact = () => (
     <div>
       <Contactus />
       <Footer1 />
     </div>
   );
+
+  // Display loading animation first, then the main content
+  if (isLoading) {
+    return <WebsiteLoader />;
+  }
 
   return (
     <Router>
