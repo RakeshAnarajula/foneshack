@@ -3,24 +3,12 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 const Hero2 = ({ scrollToFeature }) => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 overflow-hidden">
-      {/* Background Image for Small Screens */}
-      <motion.div
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 overflow-hidden">      <motion.div
         className="absolute inset-0 bg-cover bg-center w-full h-full sm:hidden"
         style={{
-          backgroundImage: 'url("/hand mobile1.png")',
-        }}
-        initial={{ scale: 1 }}
-        animate={{ scale: 1.1 }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
+          backgroundImage: 'url("Samsung Galaxy2.png")',
         }}
       ></motion.div>
-
-      {/* Background Image for Larger Screens */}
       <motion.div
         className="absolute inset-0 bg-contain bg-center hidden sm:block"
         style={{

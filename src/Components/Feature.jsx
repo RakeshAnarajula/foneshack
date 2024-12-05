@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
 const Feature = () => {
   const [showAnimation, setShowAnimation] = useState(false);
-  
   useEffect(() => {
     const options = {
       root: null,
@@ -28,7 +26,7 @@ const Feature = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row items-center overflow-x-hidden justify-between min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 px-4" // added padding for mobile
+      className="flex flex-col lg:flex-row items-center overflow-x-hidden justify-between bg-gray-900 px-6"
       id="feature-section"
     >
       {/* Image Section */}
@@ -43,14 +41,12 @@ const Feature = () => {
           className=" w-full h-auto object-cover"
         />
       </div>
-
-      {/* Content Section */}
       <div
         className={`w-full lg:w-1/2 transform ${
           showAnimation ? 'animate-slide-right' : ''
-        } opacity-0 animate-element py-20 mb-10`} // removed margin-top to eliminate space
+        } opacity-0 animate-element mb-10`}
       >
-        <h2 className="text-3xl lg:text-4xl font-bold text-red-600 mb-4">
+        <h2 className="text-center text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-6">
           Your Perfect Mobiles Awaits at FoneShack
         </h2>
         <p className="text-lg text-white mb-4">

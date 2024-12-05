@@ -6,6 +6,7 @@ import Feature from "./Components/Feature";
 import Loader from "./Components/Loader";
 import Ourservices from "./Components/Ourservices";
 import Whyfoneshack from "./Components/Whyfoneshack";
+import Testinomial from "./Components/Testinomial";
 import Marquee from "./Components/Marquee";
 import Footer from "./Components/Footer";
 import Hero1 from "./MobilePage/Hero1";
@@ -45,6 +46,7 @@ const App = () => {
         <Feature />
         <Ourservices />
         <Whyfoneshack />
+        <Testinomial />
         <Marquee />
         <Footer />
       </div>
