@@ -109,15 +109,15 @@ const App = () => {
   return (
     <div className="flex flex-col items-center p-4 bg-gray-900">
       {/* Title Section */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-6">
+      <h2 className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-blue-600 mb-6">
         Our Services
-        <span className="block w-full h-1 bg-gradient-to-r from-blue-500 to-purple-600 mt-1 animate-[underline_1s_ease-in-out]"></span>
+        <span className="block w-full h-1 bg-gradient-to-r from-yellow-500 to-blue-600 mt-1 animate-[underline_1s_ease-in-out]"></span>
       </h2>
 
       {/* Card Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-6xl">
         <Card
-          image="/mobilephone.png"
+          image="/mobilephone new.jpg"
           title="Mobile Phones"
           description="Explore our diverse range of mobile handsets from top brands, ensuring you always stay connected."
           icon={Smartphone}
@@ -131,7 +131,7 @@ const App = () => {
           path="/accessories"
         />
         <Card
-          image="/surepay vendor.jpg"
+          image="/surepay.jpg"
           title="SurePay Dominica Vendor"
           description="Head to SurePay Dominica Fhoneshack located at 56 King George V St, Roseau, Dominica."
           icon={CreditCard}

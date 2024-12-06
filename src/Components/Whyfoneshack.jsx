@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 const WhyChooseFoneShack = () => {
   const [showAnimation, setShowAnimation] = useState([]);
+
   useEffect(() => {
     const options = {
       root: null,
       threshold: 0.5,
     };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const index = parseInt(entry.target.getAttribute('data-index'));
+        const index = parseInt(entry.target.getAttribute("data-index"));
         if (entry.isIntersecting) {
           setShowAnimation((prev) => {
             const newState = [...prev];
@@ -20,9 +22,9 @@ const WhyChooseFoneShack = () => {
       });
     }, options);
 
-    const elements = document.querySelectorAll('.animate-element');
+    const elements = document.querySelectorAll(".animate-element");
     elements.forEach((element) => {
-      const index = parseInt(element.getAttribute('data-index'));
+      const index = parseInt(element.getAttribute("data-index"));
       if (!showAnimation[index]) observer.observe(element);
     });
 
@@ -35,48 +37,44 @@ const WhyChooseFoneShack = () => {
     {
       title: "Trusted Products",
       description:
-        "We ensure every product meets the highest standards of quality, rigorously tested for reliability and durability. Trust us for your tech needs!",
+        "All our products are rigorously tested for quality and reliability, ensuring you only get the best. Every device we sell is certified and backed by our quality guarantee.",
+      extraContent:
+        "We partner with top brands to provide you with genuine devices, offering warranties and customer support that you can trust.",
       imgSrc: "/trusted.jpg",
-      icon: "🛡️"
     },
     {
       title: "Expertise",
       description:
-        "With over 20 years of experience in mobile retail and services, we are proud to lead the industry with innovative solutions and unmatched knowledge.",
+        "With over 20 years in the mobile retail industry, we offer unmatched expertise and insights into the latest technologies.",
+      extraContent:
+        "Our technical team is constantly trained on new innovations to guide you in making informed purchase decisions.",
       imgSrc: "/expertise.jpg",
-      icon: "🧠"
     },
     {
       title: "Dedicated Team",
       description:
-        "Our team of 15 highly trained professionals is passionate about delivering exceptional service tailored to your needs.",
+        "Our team is committed to ensuring customer satisfaction with every interaction. Expect friendly, knowledgeable, and professional service.",
+      extraContent:
+        "Whether you need technical support or personalized recommendations, our team is here to help every step of the way.",
       imgSrc: "/dedicated team.jpg",
-      icon: "👥"
     },
     {
-      title: "One Stop Solution",
+      title: "One-Stop Solution",
       description:
-        "From the latest devices to seamless payment solutions, FoneShack offers everything you need in one place.",
+        "From mobile phones to accessories and seamless payment solutions, FoneShack has everything you need under one roof.",
+      extraContent:
+        "Explore our wide range of products, designed to meet your everyday tech needs, all in one convenient location.",
       imgSrc: "/one step solution.jpg",
-      icon: "🔧"
     },
   ];
 
   return (
     <div className="bg-gray-900 text-white overflow-hidden relative p-4">
-      {/* Animated Title */}
-      <motion.h1 
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ 
-          duration: 1, 
-          type: "spring", 
-          bounce: 0.5 
-        }}
-        className="text-center text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-red-600 py-12 relative z-10"
-      >
-        Why Choose FoneShack?
-      </motion.h1>
+      {/* Title Section */}
+      <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-purple-700 mb-10 text-center whitespace-nowrap">
+        Why Choose Foneshack?
+        <span className="block w-40 sm:w-80 h-1 bg-gradient-to-r from-yellow-900 to-purple-600 mt-1 animate-[underline_1s_ease-in-out] mx-auto"></span>
+      </h2>
 
       {/* Feature Sections */}
       <main className="space-y-16 px-4 md:px-8 pb-16 relative z-10">
@@ -88,45 +86,37 @@ const WhyChooseFoneShack = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
             className={`flex flex-col md:flex-row items-center space-y-6 md:space-y-0 animate-element ${
-              index % 2 === 0 ? 'md:flex-row-reverse' : ''
+              index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
             data-index={index}
           >
-            {/* Image Section with Enhanced Animation */}
+            {/* Image Section with Border */}
             <motion.div
               className={`w-full md:w-1/2 transform transition-all duration-1000 ease-out ${
-                showAnimation[index] 
-                  ? 'opacity-100 translate-x-0' 
-                  : `opacity-0 ${index % 2 === 0 ? 'translate-x-32' : '-translate-x-32'}`
+                showAnimation[index]
+                  ? "opacity-100 translate-x-0"
+                  : `opacity-0 ${
+                      index % 2 === 0 ? "translate-x-32" : "-translate-x-32"
+                    }`
               }`}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 20px rgba(96, 165, 250, 0.6)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ 
-                type: "spring", 
-                stiffness: 300, 
-                damping: 10 
-              }}
             >
               <motion.div
-                className="overflow-hidden rounded-2xl"
+                className="overflow-hidden rounded-2xl border-4 border-gray-700 hover:border-red-500 transition-all duration-300"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ 
+                transition={{
                   duration: 0.6,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               >
                 <motion.img
                   src={section.imgSrc}
                   alt={section.title}
-                  className="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover transition-transform duration-300 ease-in-out"
+                  className="w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover transition-transform duration-300 ease-in-out"
                   loading="lazy"
                   whileHover={{
                     scale: 1.1,
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 />
               </motion.div>
@@ -135,17 +125,21 @@ const WhyChooseFoneShack = () => {
             {/* Content Section */}
             <div
               className={`w-full md:w-1/2 transform transition-all duration-1000 ease-out flex flex-col items-center md:items-start text-center md:text-left space-y-4 px-4 lg:px-8 ${
-                showAnimation[index] 
-                  ? 'opacity-100 translate-x-0' 
-                  : `opacity-0 ${index % 2 === 0 ? '-translate-x-32' : 'translate-x-32'}`
+                showAnimation[index]
+                  ? "opacity-100 translate-x-0"
+                  : `opacity-0 ${
+                      index % 2 === 0 ? "-translate-x-32" : "translate-x-32"
+                    }`
               }`}
             >
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-400 flex items-center">
-                <span className="mr-4 text-4xl">{section.icon}</span>
+              <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-purple-400 text-center md:text-left">
                 {section.title}
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-300">
                 {section.description}
+              </p>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-300">
+                {section.extraContent}
               </p>
             </div>
           </motion.div>

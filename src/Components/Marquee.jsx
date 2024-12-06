@@ -14,8 +14,8 @@ const Marquee = () => {
     "/nokia.png",
   ];
   return (
-    <div className="overflow-hidden w-full bg-gray-100 py-6">
-      <h2 className="text-center text-2xl sm:text-4xl font-bold mb-4 animate-fade-in text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="overflow-hidden w-full bg-gray-200 py-6">
+      <h2 className="text-center text-2xl sm:text-4xl font-bold mb-4 animate-fade-in text-transparent bg-clip-text bg-gradient-to-r from-yellow-600  to-pink-500">
         Top Brands We Carry
       </h2>
 

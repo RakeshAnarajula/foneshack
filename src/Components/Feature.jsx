@@ -46,7 +46,7 @@ const Feature = () => {
           showAnimation ? 'animate-slide-right' : ''
         } opacity-0 animate-element mb-10`}
       >
-        <h2 className="text-center text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-6">
+        <h2 className="text-center text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-purple-600 mb-6">
           Your Perfect Mobiles Awaits at FoneShack
         </h2>
         <p className="text-lg text-white mb-4">
