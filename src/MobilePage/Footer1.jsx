@@ -60,17 +60,17 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-6 mb-8">
-          <a href="#" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="https://www.facebook.com/FoneShack/" className="transform hover:scale-110 transition-transform duration-200">
             <div className="bg-blue-600 p-2 rounded-full shadow-lg hover:shadow-xl">
               <Facebook className="w-5 h-5 text-white" />
             </div>
           </a>
-          <a href="#" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="https://www.instagram.com/foneshack.dm/" className="transform hover:scale-110 transition-transform duration-200">
             <div className="bg-pink-600 p-2 rounded-full shadow-lg hover:shadow-xl">
               <Instagram className="w-5 h-5 text-white" />
             </div>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="https://x.com/foneshackdom" target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform duration-200">
             <div className="bg-black p-2 rounded-full shadow-lg hover:shadow-xl">
               <Twitter className="w-5 h-5 text-white" />
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
           <p className="text-white text-md">
             Designed and Developed by{' '}
             <a href="https://www.virtutechsolutions.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">
-              Virtue Tech Solutions
+              Virtu Tech Solutions
             </a>
           </p>
         </div>
