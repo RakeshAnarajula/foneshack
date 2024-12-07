@@ -30,7 +30,7 @@ const Hero2 = ({ scrollToFeature }) => {
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl px-6 md:px-12 text-center text-white">
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-yellow-500"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
