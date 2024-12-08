@@ -111,7 +111,7 @@
 //           <Route path="/" element={<Home />} />
 //           <Route path="/mobilephones" element={<MobilePhone />} />
 //           <Route path="/accessories" element={<Accessories />} />
-//           <Route path="/privacy" element={<Privacy />} />
+//           <Route path="/privacy" element={<PrivacyPage />} />
 //           <Route path="/terms" element={<TermsPage />} />
 //           <Route path="/contact" element={<Contact />} />
 //         </Routes>
