@@ -1,6 +1,4 @@
-import React from "react";
-
-const TermsPage = () => {
+const TermsAndConditions = () => {
   return (
     <div className="bg-gray-900 text-gray-800 py-10 px-5 sm:px-10 lg:px-20">
       <div className="max-w-4xl mx-auto bg-gray-200 rounded-lg shadow-md p-6">
@@ -114,4 +112,4 @@ const TermsPage = () => {
   );
 };
 
-export default TermsPage;
+export default TermsAndConditions;

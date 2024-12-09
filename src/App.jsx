@@ -17,9 +17,9 @@ import Accessoriescard from "./Accessories/Accessoriescard";
 import Applecard from "./Accessories/Applecard";
 import Samsungcard from "./Accessories/Samsungcard";
 import Mybattable from "./Accessories/Mybattable";
-import Term from "./Pages/Term";
-import Privacy from "./Pages/Privacy";
 import Contactus from "./Contactus/Contactus";
+import PrivacyPolicy from "./Pages/PrivacyPolicy"; 
+import TermsAndConditions from "./Pages/TermsAndConditions"; 
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -81,18 +81,6 @@ const App = () => {
     </div>
   );
 
-  const PrivacyPage = () => (
-    <div>
-      <Privacy />
-    </div>
-  );
-
-  const TermsPage = () => (
-    <div>
-      <Term />
-    </div>
-  );
-
   const Contact = () => (
     <div>
       <Contactus />
@@ -111,8 +99,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/mobilephones" element={<MobilePhone />} />
           <Route path="/accessories" element={<Accessories />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
