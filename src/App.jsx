@@ -99,8 +99,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/mobilephones" element={<MobilePhone />} />
           <Route path="/accessories" element={<Accessories />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/termsconditions" element={<TermsAndConditions />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
