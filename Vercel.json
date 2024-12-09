@@ -1,6 +1,16 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/static-build"
+      }
+    ],
     "rewrites": [
-      { "source": "/*", "destination": "/index.html" }
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
   }
   
