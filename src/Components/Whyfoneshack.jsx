@@ -37,15 +37,15 @@ const WhyChooseFoneShack = () => {
     {
       title: "Trusted Products",
       description:
-        "All our products are rigorously tested for quality and reliability, ensuring you only get the best. Every device we sell is certified and backed by our quality guarantee.",
+        "All our products are rigorously tested for quality and reliability. Every device we sell is certified and backed by our quality guarantee.",
       extraContent:
-        "We partner with top brands to provide you with genuine devices, offering warranties and customer support that you can trust.",
+        "We partner with top brands to provide with genuine devices, offering warrantie and customer support that you can trust.",
       imgSrc: "/trusted.jpg",
     },
     {
       title: "Expertise",
       description:
-        "With over 20 years in the mobile retail industry, we offer unmatched expertise and insights into the latest technologies.",
+        "With over 20 years in the mobile industry , we offer unmatched expertise and insights into the latest technologies.",
       extraContent:
         "Our technical team is constantly trained on new innovations to guide you in making informed purchase decisions.",
       imgSrc: "/expertise.jpg",
@@ -53,17 +53,17 @@ const WhyChooseFoneShack = () => {
     {
       title: "Dedicated Team",
       description:
-        "Our team is committed to ensuring customer satisfaction with every interaction. Expect friendly, knowledgeable, and professional service.",
+        "Our team commited to ensuring customer satisfaction with every interaction. knowledgeable, and professional service.",
       extraContent:
-        "Whether you need technical support or personalized recommendations, our team is here to help every step of the way.",
+        "Whether you need technical support or recommendations, our team is here to help every step of the way.",
       imgSrc: "/dedicated team.jpg",
     },
     {
       title: "One-Stop Solution",
       description:
-        "From mobile phones to accessories and seamless payment solutions, FoneShack has everything you need under one roof.",
+        "From mobile phone to seamless payment solutions, FoneShack has everything you need under one roof.",
       extraContent:
-        "Explore our wide range of products, designed to meet your everyday tech needs, all in one convenient location.",
+        "Explore wide range of products, designed to meet your everyday tech needs, all in one convenient location.",
       imgSrc: "/one step solution.jpg",
     },
   ];
