@@ -135,10 +135,10 @@ const WhyChooseFoneShack = () => {
               <h2 className="text-xl sm:text-xl lg:text-2xl font-bold text-purple-400 text-center md:text-left">
                 {section.title}
               </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-300">
+              <p className="text-start sm:text-base lg:text-lg text-gray-300">
                 {section.description}
               </p>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-300">
+              <p className="text-start sm:text-base lg:text-lg text-gray-300">
                 {section.extraContent}
               </p>
             </div>
