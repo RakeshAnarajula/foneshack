@@ -8,7 +8,7 @@ const testimonials = [
     position: "CEO, TechInnovate",
     avatar: "https://randomuser.me/api/portraits/women/1.jpg",
     content:
-      "An incredible solution that transformed our entire business strategy and operational efficiency.",
+      "An incredible solution that transformed our entire business strategy.",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const testimonials = [
     position: "Lead Developer, CodeCraft",
     avatar: "https://randomuser.me/api/portraits/men/2.jpg",
     content:
-      "The most innovative and user-friendly platform I've ever worked with. Truly game-changing technology.",
+      "The most innovative and user-friendly platform I've ever worked with.",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const testimonials = [
     position: "Marketing Director, GrowthSpark",
     avatar: "https://randomuser.me/api/portraits/women/3.jpg",
     content:
-      "Exceptional product that simplified our complex marketing workflows and boosted team productivity.",
+      "Exceptional product that simplified our complex marketing workflows.",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const testimonials = [
     position: "Startup Founder, InnovateNow",
     avatar: "https://randomuser.me/api/portraits/men/4.jpg",
     content:
-      "A revolutionary approach that redefined how we think about team collaboration and project management.",
+      "A revolutionary approach that redefined how we think about team.",
   },
 ];
 
@@ -65,12 +65,14 @@ const TestimonialCarousel = () => {
   return (
     <div className="bg-gray-900 text-white p-8 flex flex-col items-center overflow-x-hidden">
       <motion.h1
-        className="text-3xl sm:text-3xl lg:text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-violet-600"
+        className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-violet-600"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         What Our Clients Say
+        <span className="block w-40 sm:w-80 h-1 bg-gradient-to-r from-yellow-900 to-purple-600 mt-1 animate-[underline_1s_ease-in-out] mx-auto"></span>
+
       </motion.h1>
       <div className="relative w-full max-w-4xl flex flex-col items-center">
         {/* Cards Container */}

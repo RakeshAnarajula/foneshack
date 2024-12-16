@@ -69,9 +69,9 @@ const WhyChooseFoneShack = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white overflow-hidden relative p-4">
+    <div className="bg-gray-900 text-white overflow-hidden relative p-6">
       {/* Title Section */}
-      <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-purple-700 mb-10 text-center whitespace-nowrap">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-purple-700 mb-10 text-center whitespace-nowrap">
         Why Choose Foneshack?
         <span className="block w-40 sm:w-80 h-1 bg-gradient-to-r from-yellow-900 to-purple-600 mt-1 animate-[underline_1s_ease-in-out] mx-auto"></span>
       </h2>
@@ -132,7 +132,7 @@ const WhyChooseFoneShack = () => {
                     }`
               }`}
             >
-              <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-purple-400 text-center md:text-left">
+              <h2 className="text-xl sm:text-xl lg:text-2xl font-bold text-purple-400 text-center md:text-left">
                 {section.title}
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-300">
