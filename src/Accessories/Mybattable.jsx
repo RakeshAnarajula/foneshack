@@ -26,7 +26,7 @@ const App = () => {
     {
       title: "Powerbanks",
       sku: "RPBBAT011",
-      description: "MyBat Pro 20000mAh Power Delivery Power Bank (20W)",
+      description: "MyBat Pro 20000mAh Power Bank (20W)",
       image: "/tablepower bank.png",
       additionalItems: [
         { sku: "RPBBAT011", description: "MyBat Pro 20000mAh Power Delivery Power Bank (20W) – Black" },

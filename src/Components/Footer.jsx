@@ -117,48 +117,47 @@ const Footer = () => {
           </a>
         </div>
         <div className="border-t border-gray-600 pt-6">
-          <div className="text-center mb-2">
-            <p className="text-white text-sm">© 2024 FoneShack. All Rights Reserved.</p>
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <div className="text-white text-sm mb-2 sm:mb-0">
+              © 2024 FoneShack. All Rights Reserved.
+            </div>
+            <div className="flex flex-wrap justify-center space-x-3 text-xs sm:text-sm text-white mb-2 sm:mb-0">
+              <a
+                href="/privacypolicy"
+                className="hover:text-blue-300 transition-colors duration-200"
+              >
+                Privacy Policy
+              </a>
+              <span>|</span>
+              <a
+                href="/termsconditions"
+                className="hover:text-blue-300 transition-colors duration-200"
+              >
+                Terms of Service
+              </a>
+              <span>|</span>
+              <a
+                href="/contact"
+                className="hover:text-blue-300 transition-colors duration-200"
+              >
+                Contact Us
+              </a>
+            </div>
+            <div className="text-white text-xs sm:text-sm">
+              Designed and Developed by{" "}
+              <a
+                href="https://www.virtutechsolutions.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:underline"
+              >
+                Virtu Tech Solutions
+              </a>
+            </div>
           </div>
-          <div className="flex flex-wrap justify-center space-x-3 text-xs sm:text-sm text-white">
-            <a
-              href="/privacypolicy"
-              className="hover:text-blue-300 transition-colors duration-200"
-            >
-              Privacy Policy
-            </a>
-            <span>|</span>
-            <a
-              href="/termsconditions"
-              className="hover:text-blue-300 transition-colors duration-200"
-            >
-              Terms of Service
-            </a>
-            <span>|</span>
-            <a
-              href="/contact"
-              className="hover:text-blue-300 transition-colors duration-200"
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-        <div className="text-center mt-2">
-          <p className="text-white text-xs sm:text-md">
-            Designed and Developed by{" "}
-            <a
-              href="https://www.virtutechsolutions.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:underline"
-            >
-              Virtu Tech Solutions
-            </a>
-          </p>
         </div>
       </div>
     </footer>
   );
 };
-
 export default Footer;
